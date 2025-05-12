@@ -1,4 +1,4 @@
-# 🥦 Mama Mboga – Online Grocery Delivery App
+# 🥦 Mama Mboga – Online Grocery Delivery App https://mboga-market-garden-myx67ait3-gi-nyamburas-projects.vercel.app/
 
 Mama Mboga is a modern, responsive web application built with **Next.js** and **Supabase** to connect consumers directly with local green grocers and farmers. The platform offers real-time grocery browsing, cart management, seamless ordering, and digital payments via M-Pesa and Flutterwave. Inspired by Uber and Fiverr, it features a clean, fresh, user-friendly interface for both buyers and sellers.
 
