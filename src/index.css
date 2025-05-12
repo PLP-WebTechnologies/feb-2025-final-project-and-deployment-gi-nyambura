@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 33% 99%;
+    --foreground: 120 5% 10%;
+
+    --card: 60 33% 99%;
+    --card-foreground: 120 5% 10%;
+
+    --popover: 60 33% 99%;
+    --popover-foreground: 120 5% 10%;
+
+    --primary: 142 71% 45%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 30 58% 66%;
+    --secondary-foreground: 355 100% 100%;
+
+    --muted: 60 10% 96%;
+    --muted-foreground: 120 5% 45%;
+
+    --accent: 25 45% 56%;
+    --accent-foreground: 355 100% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 355 100% 100%;
+
+    --border: 120 8% 90%;
+    --input: 120 8% 90%;
+    --ring: 142 71% 45%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 120 5% 10%;
+    --foreground: 60 33% 99%;
+
+    --card: 120 5% 13%;
+    --card-foreground: 60 33% 99%;
+
+    --popover: 120 5% 13%;
+    --popover-foreground: 60 33% 99%;
+
+    --primary: 142 71% 40%;
+    --primary-foreground: 355 100% 100%;
+
+    --secondary: 30 58% 40%;
+    --secondary-foreground: 355 100% 100%;
+
+    --muted: 120 5% 20%;
+    --muted-foreground: 60 10% 70%;
+
+    --accent: 25 45% 40%;
+    --accent-foreground: 355 100% 100%;
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 355 100% 100%;
+
+    --border: 120 5% 20%;
+    --input: 120 5% 20%;
+    --ring: 142 71% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+}
+
+/* Custom Classes */
+@layer components {
+  .eco-badge {
+    @apply inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  .eco-badge-organic {
+    @apply eco-badge bg-emerald-100 text-emerald-800;
+  }
+  .eco-badge-fresh {
+    @apply eco-badge bg-cream-100 text-clay-800;
+  }
+  .eco-badge-local {
+    @apply eco-badge bg-clay-100 text-clay-800;
+  }
+}
